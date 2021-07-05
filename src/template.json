@@ -1,0 +1,772 @@
+{
+  "type": "page",
+  "data": {
+    "value": {
+      "breakpoint": "480px",
+      "font-family": "'Hiragino Kaku Gothic ProN','Hiragino Sans',Meiryo",
+      "text-color": "#000000",
+      "headAttributes": "",
+      "fonts": []
+    }
+  },
+  "attributes": {
+    "background-color": "#efeeea"
+  },
+  "children": [
+    {
+      "type": "wrapper",
+      "data": {
+        "value": {}
+      },
+      "attributes": {
+        "padding": "20px 4px 20px 4px",
+        "border": "none",
+        "direction": "ltr",
+        "text-align": "center",
+        "background-color": "rgba(255, 255, 255, 1)"
+      },
+      "children": [
+        {
+          "type": "section",
+          "data": {
+            "value": {}
+          },
+          "attributes": {
+            "padding": "20px 0px 0px 0px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center"
+          },
+          "children": [
+            {
+              "type": "column",
+              "data": {
+                "value": {}
+              },
+              "attributes": {
+                "padding": "0px 0px 0px 0px",
+                "border": "none",
+                "vertical-align": "top"
+              },
+              "children": [
+                {
+                  "type": "image",
+                  "data": {
+                    "value": {}
+                  },
+                  "attributes": {
+                    "align": "center",
+                    "height": "auto",
+                    "padding": "10px 25px 10px 25px",
+                    "width": "150px",
+                    "src": "https://i.postimg.cc/63Bzt8fw/Tabechoku-Tastin-collab.png"
+                  },
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "data": {
+                    "value": {
+                      "content": "この度は、#cookforJapn by 食べチョクのご利用ありがとうございます。<div>シェフからのメッセージをお楽しみください。</div>"
+                    }
+                  },
+                  "attributes": {
+                    "font-size": "13px",
+                    "padding": "10px 25px 10px 25px",
+                    "line-height": "1",
+                    "align": "center"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "data": {
+            "value": {}
+          },
+          "attributes": {
+            "padding": "10px 0px 10px 0px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center"
+          },
+          "children": [
+            {
+              "type": "column",
+              "data": {
+                "value": {}
+              },
+              "attributes": {
+                "padding": "0px 0px 0px 0px",
+                "border": "none",
+                "vertical-align": "top"
+              },
+              "children": [
+                {
+                  "type": "divider",
+                  "data": {
+                    "value": {}
+                  },
+                  "attributes": {
+                    "align": "center",
+                    "border-width": "4px",
+                    "border-style": "solid",
+                    "border-color": "rgba(240, 240, 240, 1)",
+                    "padding": "10px 0px 4px 0px"
+                  },
+                  "children": []
+                },
+                {
+                  "type": "text",
+                  "data": {
+                    "value": {
+                      "content": "Brought to you by: Tastin"
+                    }
+                  },
+                  "attributes": {
+                    "font-size": "13px",
+                    "padding": "10px 25px 10px 25px",
+                    "line-height": "1",
+                    "align": "center"
+                  },
+                  "children": []
+                },
+                {
+                  "type": "divider",
+                  "data": {
+                    "value": {}
+                  },
+                  "attributes": {
+                    "align": "center",
+                    "border-width": "4px",
+                    "border-style": "solid",
+                    "border-color": "rgba(240, 240, 240, 1)",
+                    "padding": "4px 0px 10px 0px"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "data": {
+            "value": {
+              "noWrap": true
+            }
+          },
+          "attributes": {
+            "padding": "20px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center"
+          },
+          "children": [
+            {
+              "type": "group",
+              "data": {
+                "value": {}
+              },
+              "attributes": {
+                "vertical-align": "top",
+                "direction": "ltr"
+              },
+              "children": [
+                {
+                  "type": "column",
+                  "data": {
+                    "value": {}
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 0px 0px",
+                    "border": "none",
+                    "vertical-align": "top",
+                    "width": "25%"
+                  },
+                  "children": [
+                    {
+                      "type": "image",
+                      "data": {
+                        "value": {}
+                      },
+                      "attributes": {
+                        "align": "center",
+                        "height": "auto",
+                        "padding": "0px 0px 0px 0px",
+                        "width": "",
+                        "src": "https://i.postimg.cc/PqkrfwVC/11328534-1610104292029-1c8e4b05c51f4.jpg",
+                        "border": "round"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "column",
+                  "data": {
+                    "value": {}
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 0px 0px",
+                    "border": "none",
+                    "vertical-align": "top",
+                    "width": "75%"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": {
+                        "value": {
+                          "content": "橋野元樹"
+                        }
+                      },
+                      "attributes": {
+                        "font-size": "16px",
+                        "padding": "10px 25px 5px 25px",
+                        "line-height": "1",
+                        "align": "left"
+                      },
+                      "children": []
+                    },
+                    {
+                      "type": "text",
+                      "data": {
+                        "value": {
+                          "content": "担当料理: 日本酒"
+                        }
+                      },
+                      "attributes": {
+                        "font-size": "10px",
+                        "padding": "5px 25px 5px 25px",
+                        "line-height": "1",
+                        "align": "left"
+                      },
+                      "children": []
+                    },
+                    {
+                      "type": "text",
+                      "data": {
+                        "value": {
+                          "content": "日本酒と日本酒を育てた方や育った場所に寄り添い、新しいことも積極的に取り入れ実験し、挑戦なさる橋野さん。そんな橋野さんの味わい深くも、モダンなお考えや想い、ストーリーをお届けします。"
+                        }
+                      },
+                      "attributes": {
+                        "font-size": "13px",
+                        "padding": "5px 25px 10px 25px",
+                        "line-height": "1",
+                        "align": "left"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "data": {
+            "value": {}
+          },
+          "attributes": {
+            "padding": "0px 0px 0px 0px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center"
+          },
+          "children": [
+            {
+              "type": "column",
+              "data": {
+                "value": {}
+              },
+              "attributes": {
+                "padding": "0px 20px 0px 20px",
+                "border": "none",
+                "vertical-align": "top"
+              },
+              "children": [
+                {
+                  "type": "divider",
+                  "data": {
+                    "value": {}
+                  },
+                  "attributes": {
+                    "align": "center",
+                    "border-width": "1px",
+                    "border-style": "solid",
+                    "border-color": "#C9CCCF",
+                    "padding": "10px 0px 10px 0px"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "data": {
+            "value": {
+              "noWrap": true
+            }
+          },
+          "attributes": {
+            "padding": "20px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center"
+          },
+          "children": [
+            {
+              "type": "group",
+              "data": {
+                "value": {}
+              },
+              "attributes": {
+                "vertical-align": "top",
+                "direction": "ltr"
+              },
+              "children": [
+                {
+                  "type": "column",
+                  "data": {
+                    "value": {}
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 0px 0px",
+                    "border": "none",
+                    "vertical-align": "top",
+                    "width": "25%"
+                  },
+                  "children": [
+                    {
+                      "type": "image",
+                      "data": {
+                        "value": {}
+                      },
+                      "attributes": {
+                        "align": "center",
+                        "height": "auto",
+                        "padding": "0px 0px 0px 0px",
+                        "width": "150px",
+                        "src": "https://i.postimg.cc/2SP6MJfN/11328534-1609746424517-eb8d082beabe5.jpg",
+                        "border": "round"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "column",
+                  "data": {
+                    "value": {}
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 0px 0px",
+                    "border": "none",
+                    "vertical-align": "top",
+                    "width": "75%"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": {
+                        "value": {
+                          "content": "高橋雄一"
+                        }
+                      },
+                      "attributes": {
+                        "font-size": "16px",
+                        "padding": "10px 25px 5px 25px",
+                        "line-height": "1",
+                        "align": "left"
+                      },
+                      "children": []
+                    },
+                    {
+                      "type": "text",
+                      "data": {
+                        "value": {
+                          "content": "担当料理: 料理A"
+                        }
+                      },
+                      "attributes": {
+                        "font-size": "10px",
+                        "padding": "5px 25px 5px 25px",
+                        "line-height": "1",
+                        "align": "left"
+                      },
+                      "children": []
+                    },
+                    {
+                      "type": "text",
+                      "data": {
+                        "value": {
+                          "content": "ご家族にまつわるご経験をきっかけに、料理人として福祉活動も行っている高橋さんの常に経験を動力として変換する、まっすぐなお声をお届けします。"
+                        }
+                      },
+                      "attributes": {
+                        "font-size": "13px",
+                        "padding": "5px 25px 10px 25px",
+                        "line-height": "1",
+                        "align": "left"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "data": {
+            "value": {}
+          },
+          "attributes": {
+            "padding": "0px 0px 0px 0px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center"
+          },
+          "children": [
+            {
+              "type": "column",
+              "data": {
+                "value": {}
+              },
+              "attributes": {
+                "padding": "0px 20px 0px 20px",
+                "border": "none",
+                "vertical-align": "top"
+              },
+              "children": [
+                {
+                  "type": "divider",
+                  "data": {
+                    "value": {}
+                  },
+                  "attributes": {
+                    "align": "center",
+                    "border-width": "1px",
+                    "border-style": "solid",
+                    "border-color": "#C9CCCF",
+                    "padding": "10px 0px 10px 0px"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "data": {
+            "value": {
+              "noWrap": true
+            }
+          },
+          "attributes": {
+            "padding": "20px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center"
+          },
+          "children": [
+            {
+              "type": "group",
+              "data": {
+                "value": {}
+              },
+              "attributes": {
+                "vertical-align": "top",
+                "direction": "ltr"
+              },
+              "children": [
+                {
+                  "type": "column",
+                  "data": {
+                    "value": {}
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 0px 0px",
+                    "border": "none",
+                    "vertical-align": "top",
+                    "width": "25%"
+                  },
+                  "children": [
+                    {
+                      "type": "image",
+                      "data": {
+                        "value": {}
+                      },
+                      "attributes": {
+                        "align": "center",
+                        "height": "auto",
+                        "padding": "0px 0px 0px 0px",
+                        "width": "150px",
+                        "src": "https://i.postimg.cc/0QNywqYm/11328534-1608967739542-43d60de26e592.jpg",
+                        "border": "round"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "column",
+                  "data": {
+                    "value": {}
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 0px 0px",
+                    "border": "none",
+                    "vertical-align": "top",
+                    "width": "75%"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": {
+                        "value": {
+                          "content": "野村友彬"
+                        }
+                      },
+                      "attributes": {
+                        "font-size": "16px",
+                        "padding": "10px 25px 5px 25px",
+                        "line-height": "1",
+                        "align": "left"
+                      },
+                      "children": []
+                    },
+                    {
+                      "type": "text",
+                      "data": {
+                        "value": {
+                          "content": "担当料理: 料理B"
+                        }
+                      },
+                      "attributes": {
+                        "font-size": "10px",
+                        "padding": "5px 25px 5px 25px",
+                        "line-height": "1",
+                        "align": "left"
+                      },
+                      "children": []
+                    },
+                    {
+                      "type": "text",
+                      "data": {
+                        "value": {
+                          "content": "紆余曲折ありつつも、自分と自分の役割を確認しながら常に新しい挑戦をし続け、ひたすらに邁進。そんな野村さんの内省的な視点をもちつつもグローバルな視野、心意気など新しくも刺激的なお話をお届けします！"
+                        }
+                      },
+                      "attributes": {
+                        "font-size": "13px",
+                        "padding": "5px 25px 10px 25px",
+                        "line-height": "1",
+                        "align": "left"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "data": {
+            "value": {}
+          },
+          "attributes": {
+            "padding": "0px 0px 0px 0px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center"
+          },
+          "children": [
+            {
+              "type": "column",
+              "data": {
+                "value": {}
+              },
+              "attributes": {
+                "padding": "0px 20px 0px 20px",
+                "border": "none",
+                "vertical-align": "top"
+              },
+              "children": [
+                {
+                  "type": "divider",
+                  "data": {
+                    "value": {}
+                  },
+                  "attributes": {
+                    "align": "center",
+                    "border-width": "1px",
+                    "border-style": "solid",
+                    "border-color": "#C9CCCF",
+                    "padding": "10px 0px 10px 0px"
+                  },
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "data": {
+            "value": {
+              "noWrap": true
+            }
+          },
+          "attributes": {
+            "padding": "20px 20px 20px 20px",
+            "background-repeat": "repeat",
+            "background-size": "auto",
+            "background-position": "top center",
+            "border": "none",
+            "direction": "ltr",
+            "text-align": "center"
+          },
+          "children": [
+            {
+              "type": "group",
+              "data": {
+                "value": {}
+              },
+              "attributes": {
+                "vertical-align": "top",
+                "direction": "ltr"
+              },
+              "children": [
+                {
+                  "type": "column",
+                  "data": {
+                    "value": {}
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 0px 0px",
+                    "border": "none",
+                    "vertical-align": "top",
+                    "width": "25%"
+                  },
+                  "children": [
+                    {
+                      "type": "image",
+                      "data": {
+                        "value": {}
+                      },
+                      "attributes": {
+                        "align": "center",
+                        "height": "auto",
+                        "padding": "0px 0px 0px 0px",
+                        "width": "150px",
+                        "src": "https://i.postimg.cc/26q3tD1Y/11328534-1608861708128-359426e880ed4.jpg",
+                        "border": "round"
+                      },
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "type": "column",
+                  "data": {
+                    "value": {}
+                  },
+                  "attributes": {
+                    "padding": "0px 0px 0px 0px",
+                    "border": "none",
+                    "vertical-align": "top",
+                    "width": "75%"
+                  },
+                  "children": [
+                    {
+                      "type": "text",
+                      "data": {
+                        "value": {
+                          "content": "江六前一郎"
+                        }
+                      },
+                      "attributes": {
+                        "font-size": "16px",
+                        "padding": "10px 25px 5px 25px",
+                        "line-height": "1",
+                        "align": "left"
+                      },
+                      "children": []
+                    },
+                    {
+                      "type": "text",
+                      "data": {
+                        "value": {
+                          "content": "担当料理: 料理C"
+                        }
+                      },
+                      "attributes": {
+                        "font-size": "10px",
+                        "padding": "5px 25px 5px 25px",
+                        "line-height": "1",
+                        "align": "left"
+                      },
+                      "children": []
+                    },
+                    {
+                      "type": "text",
+                      "data": {
+                        "value": {
+                          "content": "食の魅力を発見し、それを教えてくれる編集者。広い視野と深い思考を持ち、物腰の柔らかな江六前さんの、食やシェフへの愛情あふれるお話をお届けします！"
+                        }
+                      },
+                      "attributes": {
+                        "font-size": "13px",
+                        "padding": "5px 25px 10px 25px",
+                        "line-height": "1",
+                        "align": "left"
+                      },
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
