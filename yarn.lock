@@ -715,10 +715,10 @@ domutils@^2.0.0, domutils@^2.5.2, domutils@^2.6.0, domutils@^2.7.0:
     domelementtype "^2.2.0"
     domhandler "^4.2.0"
 
-easy-email-editor@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/easy-email-editor/-/easy-email-editor-1.1.2.tgz#1974c689ee073c38ae4fccf1e35c83da00926f15"
-  integrity sha512-fCssHALe83CPWMKejL0mYETXfi9nFX5yx0QdEFrj8Bvf1WBDenKe30VoDpJ1gqsW3ENo+62EeWN2GliP61Y2yQ==
+easy-email-editor@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/easy-email-editor/-/easy-email-editor-1.1.4.tgz#ec66c89e09e1b9941a94759cdc56a74563205532"
+  integrity sha512-k63Pas3Rw8McXCMF6sUMdmftEi0KiRSZ2GVcml/QIhhsSGk34k/GWL6Yg/h0h6YmkuGE43yvSXn71iyPXX+1/A==
   dependencies:
     antd "^4.15.5"
     formik "^2.2.6"

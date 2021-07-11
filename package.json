@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "antd": "^4.16.6",
-    "easy-email-editor": "^1.1.2",
+    "easy-email-editor": "^1.1.4",
     "formik": "^2.2.9",
     "mjml-browser": "^4.10.1",
     "react": "^17.0.0",
