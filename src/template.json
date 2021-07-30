@@ -47,8 +47,8 @@
               "attributes": {
                 "align": "center",
                 "height": "auto",
-                "padding": "10px 25px",
-                "src": "http://i.imgur.com/6wwIX3R.png",
+                "padding": "10px 25px 10px 25px",
+                "src": "https://assets.maocanhua.cn/58c3f0cd-ef78-4522-bade-e57a5a8c819b-image.png",
                 "width": "162px"
               },
               "children": []
@@ -92,8 +92,8 @@
               "attributes": {
                 "align": "center",
                 "height": "auto",
-                "padding": "10px 25px",
-                "src": "http://i.imgur.com/nwNZ0TW.png",
+                "padding": "10px 25px 10px 25px",
+                "src": "https://assets.maocanhua.cn/aa5a22dc-d700-4e60-a23c-a90417fc8e41-image.png",
                 "width": "170px"
               },
               "children": []

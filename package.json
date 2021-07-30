@@ -6,9 +6,11 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@types/lodash": "^4.14.171",
     "antd": "^4.16.6",
-    "easy-email-editor": "^1.1.4",
+    "easy-email-editor": "^1.1.6",
     "formik": "^2.2.9",
+    "lodash": "^4.17.21",
     "mjml-browser": "^4.10.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"

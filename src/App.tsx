@@ -9,12 +9,14 @@ import {
   transformToMjml,
   IEmailTemplate,
   BlocksMap,
+  Stack,
 } from 'easy-email-editor';
 import 'easy-email-editor/lib/style.css';
 import 'antd/dist/antd.css';
 import { FormikHelpers } from 'formik';
 
 import template from './template.json'
+import { customBlocks } from './CustomBlocks';
 
 const fontList = [
   'Arial',
@@ -36,6 +38,10 @@ const fontList = [
 ].map(item => ({ value: item, label: item }));
 
 export default function Editor() {
+
+  const extraBlocksList = useMemo(() => {
+    return [customBlocks,];
+  }, []);
 
   const onSubmit = useCallback(
     async (values: IEmailTemplate, helper: FormikHelpers<IEmailTemplate>) => {
@@ -66,7 +72,7 @@ export default function Editor() {
     <div>
       <EmailEditorProvider
         data={initialValues}
-        extraBlocks={[]}
+        extraBlocks={extraBlocksList}
         // onUploadImage={services.common.uploadByQiniu}
         interactiveStyle={{
           hoverColor: '#3b97e3',
@@ -83,7 +89,7 @@ export default function Editor() {
               <PageHeader
                 title='Edit'
                 extra={
-                  <div style={{ display: 'flex' }}>
+                  <Stack alignment="center">
                     <Button onClick={() => onExportHtml(values)}>
                       Export html
                     </Button>
@@ -94,7 +100,7 @@ export default function Editor() {
                     >
                       Save
                     </Button>
-                  </div>
+                  </Stack>
                 }
               />
               <EmailEditor height={'calc(100vh - 85px)'} />

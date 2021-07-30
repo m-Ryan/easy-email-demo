@@ -279,6 +279,11 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
+"@types/lodash@^4.14.171":
+  version "4.14.171"
+  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.171.tgz#f01b3a5fe3499e34b622c362a46a609fdb23573b"
+  integrity sha512-7eQ2xYLLI/LsicL2nejW9Wyko3lcpN6O/z0ZLHrEQsg280zIdCv1t/0m6UtBjUHokCGBQ3gYTbHzDkZ1xOBwwg==
+
 "@types/prop-types@*":
   version "15.7.3"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
@@ -715,10 +720,10 @@ domutils@^2.0.0, domutils@^2.5.2, domutils@^2.6.0, domutils@^2.7.0:
     domelementtype "^2.2.0"
     domhandler "^4.2.0"
 
-easy-email-editor@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/easy-email-editor/-/easy-email-editor-1.1.4.tgz#ec66c89e09e1b9941a94759cdc56a74563205532"
-  integrity sha512-k63Pas3Rw8McXCMF6sUMdmftEi0KiRSZ2GVcml/QIhhsSGk34k/GWL6Yg/h0h6YmkuGE43yvSXn71iyPXX+1/A==
+easy-email-editor@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/easy-email-editor/-/easy-email-editor-1.1.6.tgz#28af0c80c0750ccc38215a30265b44cf7831402a"
+  integrity sha512-FpO2SjUfSvwKwdiEOM/pb32yGsKbEjLATAOeNTS6bzs3jp6xa1wZDfvRzOWlr/GEglxAVWWy0Td2B+ojsaIwbg==
   dependencies:
     antd "^4.15.5"
     formik "^2.2.6"
