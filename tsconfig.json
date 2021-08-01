@@ -6,17 +6,26 @@
       "DOM.Iterable",
       "ESNext"
     ],
-    "allowJs": false,
-    "skipLibCheck": false,
+    "types": [
+      "vite/client",
+      "node"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "alwaysStrict": false,
     "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": false,
     "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
-    "noEmit": true,
-    "jsx": "react"
+    // "declaration": true,
+    "jsx": "react",
+    "baseUrl": ".",
   },
   "include": [
     "./src",

@@ -720,10 +720,10 @@ domutils@^2.0.0, domutils@^2.5.2, domutils@^2.6.0, domutils@^2.7.0:
     domelementtype "^2.2.0"
     domhandler "^4.2.0"
 
-easy-email-editor@^1.1.6:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/easy-email-editor/-/easy-email-editor-1.1.6.tgz#28af0c80c0750ccc38215a30265b44cf7831402a"
-  integrity sha512-FpO2SjUfSvwKwdiEOM/pb32yGsKbEjLATAOeNTS6bzs3jp6xa1wZDfvRzOWlr/GEglxAVWWy0Td2B+ojsaIwbg==
+easy-email-editor@^1.1.9:
+  version "1.1.9"
+  resolved "https://registry.yarnpkg.com/easy-email-editor/-/easy-email-editor-1.1.9.tgz#9699797386e085b02c63767cf4f1a2cfb98dbaa6"
+  integrity sha512-Z3FGaKS576pYTd8jx866ZxnNvVk3ZWxLbHIp9XOR/OSDQkVGewR2ADNRRJ0KagoUFY7NTJS5V0gDnNh3hV9Kyg==
   dependencies:
     antd "^4.15.5"
     formik "^2.2.6"
