@@ -78,12 +78,12 @@ export default function Editor() {
           hoverColor: '#3b97e3',
           selectedColor: '#69c0ff',
           dragoverColor: '#13c2c2',
-          tangentColor: '#faad14',
+          tangentColor: '#E058AF',
         }}
         fontList={fontList}
         onSubmit={onSubmit}
       >
-        {({ values, handleSubmit }) => {
+        {({ values }, { submit }) => {
           return (
             <>
               <PageHeader
@@ -96,7 +96,7 @@ export default function Editor() {
 
                     <Button
                       type='primary'
-                      onClick={() => handleSubmit()}
+                      onClick={() => submit()}
                     >
                       Save
                     </Button>

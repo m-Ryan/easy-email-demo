@@ -8,12 +8,12 @@
   "dependencies": {
     "@types/lodash": "^4.14.171",
     "antd": "^4.16.6",
-    "easy-email-editor": "^1.1.9",
-    "formik": "^2.2.9",
+    "easy-email-editor": "^1.4.0",
     "lodash": "^4.17.21",
     "mjml-browser": "^4.10.1",
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "react-final-form": "^6.5.3"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",
