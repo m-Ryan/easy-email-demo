@@ -13,7 +13,6 @@ import {
 } from 'easy-email-editor';
 import 'easy-email-editor/lib/style.css';
 import 'antd/dist/antd.css';
-import { FormikHelpers } from 'formik';
 
 import template from './template.json'
 import { customBlocks } from './CustomBlocks';
@@ -44,12 +43,16 @@ export default function Editor() {
   }, []);
 
   const onSubmit = useCallback(
-    async (values: IEmailTemplate, helper: FormikHelpers<IEmailTemplate>) => {
+    async (values: IEmailTemplate) => {
       console.log('onSubmit', values);
     }, []);
 
   const onExportHtml = (values: IEmailTemplate) => {
-    const html = mjml(transformToMjml(values.content), {
+    const html = mjml(transformToMjml({
+      data: values.content,
+      mode: 'production',
+      context: values.content
+    }), {
       beautify: true,
       validationLevel: 'soft',
     }).html;
@@ -61,7 +64,7 @@ export default function Editor() {
     return {
       subject: 'Welcome to Easy-email',
       subTitle: 'Nice to meet you!',
-      content: template // BlocksMap.getBlock('Page').createInstance({}),
+      content: template as any // BlocksMap.getBlock('Page').createInstance({}),
     };
   }, []);
 

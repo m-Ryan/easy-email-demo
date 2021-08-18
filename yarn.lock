@@ -722,10 +722,10 @@ domutils@^2.0.0, domutils@^2.5.2, domutils@^2.6.0, domutils@^2.7.0:
     domelementtype "^2.2.0"
     domhandler "^4.2.0"
 
-easy-email-editor@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/easy-email-editor/-/easy-email-editor-1.4.0.tgz#c6f7ae11473f9712c3dddc53f7f8c0bfdbe64750"
-  integrity sha512-/AYBhLb6+4jBkvYcf/tsHTEB1YdjR/NQvbVkbSrWKAm5DP624d5cGEVVv8VTNoaIhq6uhdFUx2/LtlCs0mvJ9A==
+easy-email-editor@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/easy-email-editor/-/easy-email-editor-1.4.2.tgz#7d7a590b5851007a77634bbc3c9bbdb2dc0be534"
+  integrity sha512-j+RFiwf5JvvIE7OdWQrek/wm3HcRM81iKdG6dE7BiSaFd0VCIX5I8Nq7soB5efo0wjAT+FtIxIjQi4d2OxD6jg==
   dependencies:
     antd "^4.15.5"
     final-form "^4.20.2"
