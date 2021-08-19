@@ -6,9 +6,9 @@ This is a Section block with its children
 
 ```tsx
     <Section>
-    <Column>
-        <Text>hello</Text>
-    </Column>
+        <Column>
+            <Text>hello</Text>
+        </Column>
     </Section>
 ```
 
@@ -17,8 +17,7 @@ But we can also encapsulate it and call it Custom Section block.
 ```tsx
     (
 
-    <CustomSection>
-    </CustomSection>
+    <CustomSection></CustomSection>
     ).isEqual(
         <Section>
             <Column>
@@ -32,11 +31,11 @@ But we can also encapsulate it and call it Custom Section block.
 There is such a conversion rule
 
 `IBlockData<T>` => `transformToMjml`=> `mjml-component<T>`
-    - transformToMjml(IBlockData<IText>) = `<mj-text>xxx</mj-text>`
-    - transformToMjml(IBlockData<ISection>) = `<mj-section>xxx</mj-section>`
+   - transformToMjml(IBlockData\<IText\>) = `<mj-text>xxx</mj-text>`
+   - transformToMjml(IBlockData\<ISection\>) = `<mj-section>xxx</mj-section>`
 
 And it can be reversed
-    - `<mj-text>xxx</mj-text>` => `MjmlToJson` => IBlockData<IText>
+   - `<mj-text>xxx</mj-text>` => `MjmlToJson` => IBlockData\<IText\>
 
 
 ## To use a custom block, there should be the following steps
@@ -90,7 +89,7 @@ const createInstance: CreateInstance<IText> = (payload) => {
 
 ```
 
-`transform`  mainly to transform your custom block into a normal block, all custom blocks are composed of basic blocks.
+`transform`  mainly to transform your custom block into a or more basic block.
 
 When calling transformToMjml, if a custom block is encountered, its transform method will be called first. At the same time, the following parameters will be injected `currentBlockData, current idx, page context`.
 
