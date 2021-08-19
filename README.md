@@ -1,5 +1,44 @@
 # How to write a custom block
 
+What is a custom block？Custom block is composed of one or more basic blocks.
+
+This is a Section block with its children
+
+```tsx
+    <Section>
+    <Column>
+        <Text>hello</Text>
+    </Column>
+    </Section>
+```
+
+But we can also encapsulate it and call it Custom Section block.
+
+```tsx
+    (
+
+    <CustomSection>
+    </CustomSection>
+    ).isEqual(
+        <Section>
+            <Column>
+                <Text>hello</Text>
+            </Column>
+        </Section>
+    )
+   
+```
+
+There is such a conversion rule
+
+`IBlockData<T>` => `transformToMjml`=> `mjml-component<T>`
+    - transformToMjml(IBlockData<IText>) = `<mj-text>xxx</mj-text>`
+    - transformToMjml(IBlockData<ISection>) = `<mj-section>xxx</mj-section>`
+
+And it can be reversed
+    - `<mj-text>xxx</mj-text>` => `MjmlToJson` => IBlockData<IText>
+
+
 ## To use a custom block, there should be the following steps
   - Write a custom block
   - Register this block
@@ -15,11 +54,11 @@ A custom block should have the following structure
 {
   name: string; // block name, show in tooltip
   type: BlockType; // Custom type
-  Panel: () => React.ReactNode; // Configuration panel.
+  Panel: () => React.ReactNode; // Configuration panel, update your block data
   validParentType: BlockType[]; // Only drag to the above blocks. For example, `Text` only drag to `Colum` block and `Hero` block.
-  createInstance: (payload?: RecursivePartial<T>) => T;
+  createInstance: (payload?: RecursivePartial<T extends IBlockData>) => T;
   transform?: (
-    data: IBlockData, // current block data
+    data: IBlockData<T>, // current block data
     idx: string, // current idx
     context: IPage //
   ) => IBlockData;
