@@ -89,9 +89,7 @@ const createInstance: CreateInstance<IText> = (payload) => {
 
 ```
 
-`transform`  mainly to transform your custom block into a or more basic block. When transformToMjml is called, if it is found to be a custom block, we will call its transform method to convert it into basic blocks
-
-When calling transformToMjml, if a custom block is encountered, its transform method will be called first. At the same time, the following parameters will be injected `currentBlockData, current idx, page context`.
+`transform`  mainly to transform your custom block into a or more basic block. When transformToMjml is called, if it is found to be a custom block, we will call its transform method to convert it into basic blocks. At the same time, the following parameters will be injected `currentBlockData, current idx, page context`.
 
 You can construct your custom block through basic blocks. For example,
 a custom button, only the background color and text can be modified
@@ -136,6 +134,26 @@ const transform = (data: ICustomButton, idx:string; context: IPage): IBlockData 
 };
 
 ```
+
+In the `next version`, you can write your react-component as transform method, like
+
+```ts
+import { Button, Section, Column } from 'easy-email-editor';
+
+export function CustomBlock({ data }: { data: IBlockData }) {
+  const attributes = data.attributes;
+  const { buttonText } = data.data.value;
+  return (
+    <Section>
+      <Column>
+        <Button backgroundColor={attributes['background-color']}>{buttonText}</Button>
+      </Column>
+    </Section>
+  );
+}
+```
+
+
 
 </br>
 
