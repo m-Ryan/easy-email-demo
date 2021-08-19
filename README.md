@@ -89,7 +89,7 @@ const createInstance: CreateInstance<IText> = (payload) => {
 
 ```
 
-`transform`  mainly to transform your custom block into a or more basic block.
+`transform`  mainly to transform your custom block into a or more basic block. When transformToMjml is called, if it is found to be a custom block, we will call its transform method to convert it into basic blocks
 
 When calling transformToMjml, if a custom block is encountered, its transform method will be called first. At the same time, the following parameters will be injected `currentBlockData, current idx, page context`.
 
