@@ -1,7 +1,9 @@
 import { Panel } from './Panel';
 import { createInstance } from './createInstance';
-import { IBlock, IBlockData, BasicType, BlocksMap, MjmlToJson } from 'easy-email-editor';
+import { IBlock, IBlockData, BasicType } from 'easy-email-editor';
 import { CustomBlocksType } from '../constants';
+import { Section, Column, Image, Button } from 'easy-email-editor';
+import React from 'react';
 
 export type ICustomHeader = IBlockData<
   {
@@ -18,51 +20,16 @@ const transform = (data: ICustomHeader) => {
   const { imageUrl, buttonText } = data.data.value;
   const attributes = data.attributes;
 
-  const instance = MjmlToJson(`
-    <mj-section padding="20px">
-      <mj-column>
-        <mj-image padding="0px 0px 0px 0px" width="100px" src="${imageUrl}">
-        </mj-image>
-        <mj-button background-color="${attributes['background-color']}" color="${attributes['text-color']}" href="#">
-          ${buttonText}
-        </mj-button>
-      </mj-column>
-    </mj-section>
-  `)
-
-  // const { Section, Column, Image, Button } = BlocksMap.basicBlocksMap
-
-  // const instance = Section.createInstance({
-  //   attributes: {
-  //     padding: '20px'
-  //   },
-  //   children: [
-  //     Column.createInstance({
-  //       children: [
-  //         Image.createInstance({
-  //           attributes: {
-  //             padding: '0px',
-  //             width: '100px',
-  //             src: imageUrl
-  //           }
-  //         }),
-  //         Button.createInstance({
-  //           attributes: {
-  //             "background-color": attributes['background-color'],
-  //             color: attributes['text-color']
-  //           },
-  //           data: {
-  //             value: {
-  //               content: buttonText
-  //             }
-  //           }
-  //         })
-  //       ]
-  //     })
-  //   ]
-  // })
-
-
+  const instance = (
+    <Section padding="20px">
+      <Column>
+        <Image padding="0px 0px 0px 0px" width="100px" src={imageUrl} />
+        <Button background-color={attributes['background-color']} color={attributes['text-color']} href="#">
+          {buttonText}
+        </Button>
+      </Column>
+    </Section>
+  )
   return instance;
 };
 

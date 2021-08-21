@@ -25,7 +25,7 @@ But we can also encapsulate it and call it Custom Section block.
             </Column>
         </Section>
     )
-   
+
 ```
 
 There is such a conversion rule
@@ -94,26 +94,20 @@ const createInstance: CreateInstance<IText> = (payload) => {
 You can construct your custom block through basic blocks. For example,
 a custom button, only the background color and text can be modified
 
-```ts
+```tsx
+import {
+  Button,
+} from 'easy-email-editor';
+
 const transform = (data: ICustomButton, idx: string, context: IPage): IBlockData => {
   const attributes = data.attributes;
   const { buttonText } = data.data.value;
 
-  const [Button] = [
-    BlocksMap.getBlock('Button'),
-  ];
-
-  const instance = Button.createInstance({
-    attributes: {
-      'background-color': attributes['background-color'],
-    },
-    data: {
-      value: {
-        content: buttonText
-      }
-    },
-    children: [],
-  });
+  const instance = (
+    <Button background-color={attributes['background-color']}>
+      {buttonText}
+    </Button>
+  )
 
   return instance;
 };
@@ -134,25 +128,6 @@ const transform = (data: ICustomButton, idx:string; context: IPage): IBlockData 
 };
 
 ```
-
-In the `next version`, you can write your react-component as transform method, like
-
-```ts
-import { Button, Section, Column } from 'easy-email-editor';
-
-export function CustomBlock({ data }: { data: IBlockData }) {
-  const attributes = data.attributes;
-  const { buttonText } = data.data.value;
-  return (
-    <Section>
-      <Column>
-        <Button backgroundColor={attributes['background-color']}>{buttonText}</Button>
-      </Column>
-    </Section>
-  );
-}
-```
-
 
 
 </br>
@@ -193,7 +168,7 @@ export const customBlocks: BlockGroup = {
 
 src/CustomBlocks/MyFirstBlock
 
-```ts
+```tsx
 import { IBlock, IBlockData, BasicType, BlocksMap, MjmlToJson, CreateInstance} from 'easy-email-editor';
 
 enum CustomBlocksType {
@@ -234,17 +209,17 @@ const transform = (data: ICustomHeader) => {
   const { imageUrl, buttonText } = data.data.value;
   const attributes = data.attributes;
 
-  const instance = MjmlToJson(`
-    <mj-section padding="20px">
-      <mj-column>
-        <mj-image padding="0px 0px 0px 0px" width="100px" src="${imageUrl}">
-        </mj-image>
-        <mj-button background-color="${attributes['background-color']}" color="${attributes['text-color']}" href="#">
-          ${buttonText}
-        </mj-button>
-      </mj-column>
-    </mj-section>
-  `)
+  const instance = (
+    <Section padding="20px">
+      <Column>
+        <Image padding="0px 0px 0px 0px" width="100px" src={imageUrl} />
+        <Button background-color={attributes['background-color']} color={attributes['text-color']} href="#">
+          {buttonText}
+        </Button>
+      </Column>
+    </Section>
+  )
+
   return instance;
 };
 
