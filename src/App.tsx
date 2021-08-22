@@ -38,6 +38,7 @@ const fontList = [
 
 export default function Editor() {
 
+  // NOTE: cache customBlocks
   const extraBlocksList = useMemo(() => {
     return [customBlocks,];
   }, []);
@@ -75,7 +76,7 @@ export default function Editor() {
     <div>
       <EmailEditorProvider
         data={initialValues}
-        extraBlocks={extraBlocksList}
+        extraBlocks={extraBlocksList} //  NOTE: If you want to show it to the left column, add it to `extraBlocks`
         // onUploadImage={services.common.uploadByQiniu}
         interactiveStyle={{
           hoverColor: '#3b97e3',
