@@ -722,17 +722,19 @@ domutils@^2.0.0, domutils@^2.5.2, domutils@^2.6.0, domutils@^2.7.0:
     domelementtype "^2.2.0"
     domhandler "^4.2.0"
 
-easy-email-editor@^1.4.4:
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/easy-email-editor/-/easy-email-editor-1.4.4.tgz#34980bbb116bbf39a7d8506ce2d85b80284c72b3"
-  integrity sha512-ZeO8703/jv8yVHt0FWGP48jvqKEL3Hu7rmXS9bXChDu375jmXLWA/lJ1l9qNyLqAofEiT/md4568HqK6/1GeFg==
+easy-email-editor@^1.4.9:
+  version "1.4.9"
+  resolved "https://registry.yarnpkg.com/easy-email-editor/-/easy-email-editor-1.4.9.tgz#cb5c36b76f5e12c99bddd47878e54300143ca5b5"
+  integrity sha512-qykbBUVxfkcRy8wO1Ir7bYS/ZIRdsrvVtwVsrCnqYNqk7CciJ64Yh/cPKACzxi279l/Qulyz6M9tXlalzTgOQw==
   dependencies:
     antd "^4.15.5"
     final-form "^4.20.2"
     final-form-arrays "^3.0.2"
+    final-form-set-field-touched "^1.0.1"
     fs-extra "^10.0.0"
     json-format "^1.0.1"
     lodash "^4.17.20"
+    lodash-es "^4.17.21"
     mjml "^4.9.3"
     mjml-browser "^4.9.3"
     qrcode-generator "^1.4.4"
@@ -838,6 +840,11 @@ final-form-arrays@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/final-form-arrays/-/final-form-arrays-3.0.2.tgz#9f3bef778dec61432357744eb6f3abef7e7f3847"
   integrity sha512-TfO8aZNz3RrsZCDx8GHMQcyztDNpGxSSi9w4wpSNKlmv2PfFWVVM8P7Yj5tj4n0OWax+x5YwTLhT5BnqSlCi+w==
+
+final-form-set-field-touched@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/final-form-set-field-touched/-/final-form-set-field-touched-1.0.1.tgz#cfbfc0c623df157a1dd0f1a120faa4e2274950f2"
+  integrity sha512-yvE5AAs9U3OgJQ9YF8NhSF0I0mJEECvOpkaXNqovloxji5Q6gOZ0DCIAyLAKHluGSpsXKUGORyBm8Hq0beZIqQ==
 
 final-form@^4.20.2:
   version "4.20.2"
@@ -1195,7 +1202,7 @@ juice@^7.0.0:
     slick "^1.12.2"
     web-resource-inliner "^5.0.0"
 
-lodash-es@^4.17.15:
+lodash-es@^4.17.15, lodash-es@^4.17.21:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
   integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==

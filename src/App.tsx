@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-wrap-multilines */
-import React, { useCallback, useEffect, useMemo } from 'react';
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { Button, message, PageHeader } from 'antd';
 import mjml from 'mjml-browser';
 
@@ -14,8 +14,12 @@ import {
 import 'easy-email-editor/lib/style.css';
 import 'antd/dist/antd.css';
 
-import template from './template.json'
+import templateData from './template.json'
 import { customBlocks } from './CustomBlocks';
+import { useImportTemplate } from './hooks/useImportTemplate';
+import { useExportTemplate } from './hooks/useExportTemplate';
+import { copy } from './urils/clipboard';
+
 
 const fontList = [
   'Arial',
@@ -37,17 +41,22 @@ const fontList = [
 ].map(item => ({ value: item, label: item }));
 
 export default function Editor() {
+  const [downloadFileName, setDownloadName] = useState('download.mjml');
+  const [template, setTemplate] = useState<IEmailTemplate['content']>(BlocksMap.getBlock('Page').createInstance({
+    data: {
+      value: {
+        "content-background-color": '#ffffff'
+      }
+    }
+  }));
+  const { importTemplate } = useImportTemplate();
+  const { exportTemplate } = useExportTemplate();
 
   const extraBlocksList = useMemo(() => {
     return [customBlocks,];
   }, []);
 
-  const onSubmit = useCallback(
-    async (values: IEmailTemplate) => {
-      console.log('onSubmit', values);
-    }, []);
-
-  const onExportHtml = (values: IEmailTemplate) => {
+  const onCopyHtml = (values: IEmailTemplate) => {
     const html = mjml(transformToMjml({
       data: values.content,
       mode: 'production',
@@ -57,16 +66,37 @@ export default function Editor() {
       validationLevel: 'soft',
     }).html;
 
-    console.log('onExportHtml', html);
+    copy(html);
+    message.success('Copied to pasteboard!')
+  };
+
+  const onImportMjml = async () => {
+    try {
+      const [filename, data] = await importTemplate();
+      setDownloadName(filename);
+      setTemplate(data);
+    } catch (error) {
+      message.error('Invalid mjml file');
+    }
+  };
+
+  const onExportMjml = (values: IEmailTemplate) => {
+    exportTemplate(
+      downloadFileName,
+      transformToMjml({
+        data: values.content,
+        mode: 'production',
+        context: values.content
+      }))
   };
 
   const initialValues: IEmailTemplate | null = useMemo(() => {
     return {
       subject: 'Welcome to Easy-email',
       subTitle: 'Nice to meet you!',
-      content: template as any // BlocksMap.getBlock('Page').createInstance({}),
+      content: template
     };
-  }, []);
+  }, [template]);
 
 
   if (!initialValues) return null;
@@ -84,7 +114,7 @@ export default function Editor() {
           tangentColor: '#E058AF',
         }}
         fontList={fontList}
-        onSubmit={onSubmit}
+        onSubmit={() => { }}
       >
         {({ values }, { submit }) => {
           return (
@@ -93,15 +123,14 @@ export default function Editor() {
                 title='Edit'
                 extra={
                   <Stack alignment="center">
-                    <Button onClick={() => onExportHtml(values)}>
-                      Export html
+                    <Button onClick={() => onCopyHtml(values)}>
+                      Copy Html
                     </Button>
-
-                    <Button
-                      type='primary'
-                      onClick={() => submit()}
-                    >
-                      Save
+                    <Button onClick={() => onExportMjml(values)}>
+                      Export Template
+                    </Button>
+                    <Button onClick={onImportMjml}>
+                      import Template
                     </Button>
                   </Stack>
                 }
