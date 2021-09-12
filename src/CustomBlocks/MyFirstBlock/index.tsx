@@ -9,6 +9,7 @@ export type ICustomHeader = IBlockData<
   {
     'background-color': string;
     'text-color': string;
+    'button-width': number;
   },
   {
     buttonText: string;
@@ -24,7 +25,7 @@ const transform = (data: ICustomHeader) => {
     <Section padding="20px">
       <Column>
         <Image padding="0px 0px 0px 0px" width="100px" src={imageUrl} />
-        <Button background-color={attributes['background-color']} color={attributes['text-color']} href="#">
+        <Button width={attributes['button-width'] + 'px'} background-color={attributes['background-color']} color={attributes['text-color']} href="#">
           {buttonText}
         </Button>
       </Column>

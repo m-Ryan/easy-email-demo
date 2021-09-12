@@ -11,12 +11,13 @@ export const createInstance: CreateInstance<ICustomHeader> = (
     data: {
       value: {
         buttonText: 'Got it',
-        imageUrl: 'https://assets.maocanhua.cn/10dada65-c4fb-4b1f-837e-59a1005bbea6-image.png'
+        imageUrl: 'https://assets.maocanhua.cn/10dada65-c4fb-4b1f-837e-59a1005bbea6-image.png',
       },
     },
     attributes: {
       'background-color': '#4A90E2',
       'text-color': '#ffffff',
+      "button-width": 100
     },
     children: [],
   };
