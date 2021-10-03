@@ -42,7 +42,7 @@ const fontList = [
 
 export default function Editor() {
   const [downloadFileName, setDownloadName] = useState('download.mjml');
-  const [template, setTemplate] = useState<IEmailTemplate['content']>(BlocksMap.getBlock('Page').createInstance({
+  const [template, setTemplate] = useState<IEmailTemplate['content']>(BlocksMap.getBlock('Page').create({
     data: {
       value: {
         "content-background-color": '#ffffff'
