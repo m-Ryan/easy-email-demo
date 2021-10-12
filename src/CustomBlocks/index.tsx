@@ -10,8 +10,10 @@ export const customBlocks: BlockMarketCategory = {
   name: 'Custom',
   blocks: [
     {
+      type: CustomBlocksType.MY_FIRST_BLOCK as any,
       title: MyFirstBlock.name,
       description: 'An custom block',
+      thumbnail:'https://assets.maocanhua.cn/5631c12e-5788-40fd-92fe-23930a5985d7-image.png',
       ExampleComponent: () => (
         <BlockMaskWrapper
           type={CustomBlocksType.MY_FIRST_BLOCK as any}

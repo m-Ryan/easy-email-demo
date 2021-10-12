@@ -594,6 +594,11 @@ cliui@^7.0.2:
     strip-ansi "^6.0.0"
     wrap-ansi "^7.0.0"
 
+codemirror@^5.63.1:
+  version "5.63.1"
+  resolved "https://registry.yarnpkg.com/codemirror/-/codemirror-5.63.1.tgz#b0b9e8444206fd6a43a58a4b31d5740bb891fa57"
+  integrity sha512-baivaNZreZOGh1/tYyTvCupC9NeWk7qlZeGUDi4nFKj/J0JU8FYKZND4QqLw70P7HOttlCt4JJAOj9GoIhHEkA==
+
 color-convert@^1.9.0:
   version "1.9.3"
   resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
@@ -785,12 +790,13 @@ domutils@^2.0.0, domutils@^2.5.2, domutils@^2.6.0, domutils@^2.7.0:
     domelementtype "^2.2.0"
     domhandler "^4.2.0"
 
-easy-email-editor@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/easy-email-editor/-/easy-email-editor-2.0.1.tgz#531b01b3b38190befa793bbe1f8276945c880c95"
-  integrity sha512-XjvCKnaDiwmZClBvmlZ5AfsxbIlRGvHhrUq/dNeHjJaZoRiL3rG0ujO3bJF9/shNqSNHUtGjVBK67zENubd1Ew==
+easy-email-editor@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/easy-email-editor/-/easy-email-editor-2.1.1.tgz#61055c117cc78deb32b6cd0b784b3794db791610"
+  integrity sha512-Vq3UIu9ZLvDoKp8BCHB8hHYKeHv1Kvnh3O8N/yys/2A17QCU3LMZ1/NTrm/Qzvy/RI0RVHZfar6n4gmHDDbQ1Q==
   dependencies:
     antd "^4.15.5"
+    codemirror "^5.63.1"
     final-form "^4.20.2"
     final-form-arrays "^3.0.2"
     final-form-set-field-touched "^1.0.1"
@@ -805,6 +811,7 @@ easy-email-editor@^2.0.1:
     qs "6.9.6"
     react "^17.0.1"
     react-beautiful-dnd "^13.1.0"
+    react-codemirror2 "^7.2.1"
     react-color "^2.19.3"
     react-dom "^17.0.1"
     react-final-form "^6.5.3"
@@ -2267,6 +2274,11 @@ react-beautiful-dnd@^13.1.0:
     react-redux "^7.2.0"
     redux "^4.0.4"
     use-memo-one "^1.1.1"
+
+react-codemirror2@^7.2.1:
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/react-codemirror2/-/react-codemirror2-7.2.1.tgz#38dab492fcbe5fb8ebf5630e5bb7922db8d3a10c"
+  integrity sha512-t7YFmz1AXdlImgHXA9Ja0T6AWuopilub24jRaQdPVbzUJVNKIYuy3uCFZYa7CE5S3UW6SrSa5nAqVQvtzRF9gw==
 
 react-color@^2.19.3:
   version "2.19.3"

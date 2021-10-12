@@ -108,11 +108,10 @@ export default function Editor() {
         extraBlocks={extraBlocksList}
         // onUploadImage={services.common.uploadByQiniu}
         interactiveStyle={{
-          hoverColor: '#3b97e3',
-          selectedColor: '#69c0ff',
-          dragoverColor: '#13c2c2',
-          tangentColor: '#E058AF',
+          hoverColor: '#E058AF',
+          selectedColor: '#13c2c2',
         }}
+        autoComplete
         fontList={fontList}
         onSubmit={() => { }}
       >
