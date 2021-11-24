@@ -1,5 +1,6 @@
 import React from 'react';
-import { ColorPickerField, TextField, useFocusIdx, Stack, ImageUploaderField, AttributesPanelWrapper } from 'easy-email-editor';
+import { ColorPickerField, TextField, ImageUploaderField, AttributesPanelWrapper } from 'easy-email-extensions';
+import { useFocusIdx, Stack, } from 'easy-email-editor'
 
 export function Panel() {
   const { focusIdx } = useFocusIdx();

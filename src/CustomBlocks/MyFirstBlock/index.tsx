@@ -1,10 +1,11 @@
 import { Panel } from './Panel';
-import { createInstance } from './createInstance';
-import { IBlock, IBlockData, BasicType } from 'easy-email-editor';
+
+import { IBlock, IBlockData, BasicType, components } from 'easy-email-core';
 import { CustomBlocksType } from '../constants';
-import { Section, Column, Image, Button } from 'easy-email-editor';
 import React from 'react';
 import { merge } from 'lodash';
+
+const { Section, Column, Image, Button } = components;
 
 export type ICustomHeader = IBlockData<
   {
@@ -20,7 +21,6 @@ export type ICustomHeader = IBlockData<
 export const MyFirstBlock: IBlock = {
   name: 'My first block',
   type: CustomBlocksType.MY_FIRST_BLOCK as any,
-  Panel,
   create(
     payload
   ) {

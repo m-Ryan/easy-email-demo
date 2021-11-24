@@ -1,11 +1,12 @@
-import { BlocksMap, BlockMarketCategory, BlockMaskWrapper } from 'easy-email-editor';
+import { BlockManager } from 'easy-email-core';
+import { BlockMaskWrapper } from 'easy-email-extensions';
 import React from 'react';
 import { CustomBlocksType } from './constants';
 import { MyFirstBlock } from './MyFirstBlock';
 
-BlocksMap.registerBlocks({ MyFirstBlock: MyFirstBlock });
+BlockManager.registerBlocks({ MyFirstBlock: MyFirstBlock });
 
-export const customBlocks: BlockMarketCategory = {
+export const customBlocks = {
   title: 'Custom',
   name: 'Custom',
   blocks: [
@@ -13,7 +14,7 @@ export const customBlocks: BlockMarketCategory = {
       type: CustomBlocksType.MY_FIRST_BLOCK as any,
       title: MyFirstBlock.name,
       description: 'An custom block',
-      thumbnail:'https://assets.maocanhua.cn/5631c12e-5788-40fd-92fe-23930a5985d7-image.png',
+      thumbnail: 'https://assets.maocanhua.cn/5631c12e-5788-40fd-92fe-23930a5985d7-image.png',
       ExampleComponent: () => (
         <BlockMaskWrapper
           type={CustomBlocksType.MY_FIRST_BLOCK as any}
