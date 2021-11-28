@@ -252,13 +252,6 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.15.4":
-  version "7.16.3"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.16.3.tgz#b86f0db02a04187a3c17caa77de69840165d42d5"
-  integrity sha512-WBwekcqacdY2e9AF/Q7WLFUWmdJGJTkbjqTjoMDgXkVZ3ZRUvOPsLb5KdwISoQVsbP+DQzVZW4Zhci0DvpbNTQ==
-  dependencies:
-    regenerator-runtime "^0.13.4"
-
 "@babel/template@^7.14.5":
   version "7.14.5"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.14.5.tgz#a9bc9d8b33354ff6e55a9c60d1109200a68974f4"
@@ -598,45 +591,32 @@ dom-align@^1.7.0:
   resolved "https://registry.yarnpkg.com/dom-align/-/dom-align-1.12.2.tgz#0f8164ebd0c9c21b0c790310493cd855892acd4b"
   integrity sha512-pHuazgqrsTFrGU2WLDdXxCFabkdQDx72ddkraZNih1KsMcN5qsRSTR9O4VJRlwTPCPb5COYg3LOfiMHHcPInHg==
 
-easy-email-core@^2.5.2-beta.0:
-  version "2.5.2-beta.0"
-  resolved "https://registry.yarnpkg.com/easy-email-core/-/easy-email-core-2.5.2-beta.0.tgz#c6aa22a5ce386417a4ae3aa2f2b4fd5f355bcd00"
-  integrity sha512-LYXp7dxYReWaaMFFjRFB0oguz5xPF/is6xrpjZqqRSjfozcIVw+pKOf+zBp6zgcXOCHlHi7dfDW/TErLdb5QHg==
+easy-email-core@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/easy-email-core/-/easy-email-core-2.6.0.tgz#bb49d9d564103bb5fdd44b1212fc9869c1fa1ecb"
+  integrity sha512-xmIVfus5VngwGEP779kuSGFlobwoI+iCAJMueol7EqsllfzMZYWo7mIQWBqbNnPYk9ervpUy3sMqF/qec7CpmQ==
   dependencies:
     lodash "^4.17.21"
-    lodash-es "^4.17.21"
-    mjml-browser "^4.10.4"
-    react "^17.0.2"
-    react-dom "^17.0.2"
     typescript "^4.4.4"
 
-easy-email-editor@^2.5.2-beta.0:
-  version "2.5.2-beta.0"
-  resolved "https://registry.yarnpkg.com/easy-email-editor/-/easy-email-editor-2.5.2-beta.0.tgz#4f4eda907166e6e95f5017ec800d46012348a8c3"
-  integrity sha512-de8Y1DelPXwFA23pG8bzXrN095Bg0zA3Yj7lpwk/S2Pcg8ifUh9/khaI6dAVNLELWhuD+izIMJSOUdnQznNAfg==
+easy-email-editor@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/easy-email-editor/-/easy-email-editor-2.6.0.tgz#7ca5367bf6738cc854037234f3bbfc72fe4b3680"
+  integrity sha512-4FMPeTtwOviEebJF0qh76HbhiEoOaNi+Y84DprNyQsorLmNk3Y+l5CwS/OOaRRVYBmaZHCcwjQ3zb9jwxFu2NQ==
   dependencies:
-    codemirror "^5.63.3"
     final-form "^4.20.4"
     final-form-arrays "^3.0.2"
     final-form-set-field-touched "^1.0.1"
     is-hotkey "^0.2.0"
     lodash "^4.17.21"
-    lodash-es "^4.17.21"
-    mjml-browser "^4.10.4"
-    react "^17.0.2"
-    react-codemirror2 "^7.2.1"
-    react-color "^2.19.3"
-    react-dom "^17.0.2"
-    react-final-form "^6.5.7"
     react-final-form-arrays "^3.1.3"
     react-sortablejs "^6.0.0"
     react-use "^17.3.1"
-    sortablejs "^1.14.0"
 
-easy-email-extensions@^2.5.2-beta.0:
-  version "2.5.2-beta.0"
-  resolved "https://registry.yarnpkg.com/easy-email-extensions/-/easy-email-extensions-2.5.2-beta.0.tgz#66c4fabd3e8f4c64308a5248b57cd2ec4f536531"
-  integrity sha512-+0kL4+dZGtYD/beC75OtZ9fJdsfoboRS82Sc2B6wJjTSkhLtgtDSM03NAkZvtK2sODjAE9p9uEfWoxvMMF0ijQ==
+easy-email-extensions@^2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/easy-email-extensions/-/easy-email-extensions-2.6.0.tgz#b6c12a8b2958b24092f445c544bfa6f8776e4b5f"
+  integrity sha512-85eALw1NyUokehf6ozhK5a35h6XzEZG1+sFeIwBYpg3tvgFJKxInbgIGICIuN1q2x7TDZ8wZvVCwpbfHMWkd2A==
   dependencies:
     antd "^4.16.13"
     codemirror "^5.63.3"
@@ -645,13 +625,9 @@ easy-email-extensions@^2.5.2-beta.0:
     final-form-set-field-touched "^1.0.1"
     is-hotkey "^0.2.0"
     lodash "^4.17.21"
-    lodash-es "^4.17.21"
     mjml-browser "^4.10.4"
-    react "^17.0.2"
     react-codemirror2 "^7.2.1"
     react-color "^2.19.3"
-    react-dom "^17.0.2"
-    react-final-form "^6.5.7"
     react-final-form-arrays "^3.1.3"
     react-sortablejs "^6.0.0"
     react-use "^17.3.1"
@@ -811,7 +787,7 @@ json5@^2.1.2:
   dependencies:
     minimist "^1.2.5"
 
-lodash-es@^4.17.15, lodash-es@^4.17.21:
+lodash-es@^4.17.15:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
   integrity sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==
@@ -1460,7 +1436,7 @@ react-color@^2.19.3:
     reactcss "^1.2.0"
     tinycolor2 "^1.4.1"
 
-react-dom@^17.0.0, react-dom@^17.0.2:
+react-dom@^17.0.0:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-17.0.2.tgz#ecffb6845e3ad8dbfcdc498f0d0a939736502c23"
   integrity sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA==
@@ -1482,13 +1458,6 @@ react-final-form@^6.5.3:
   integrity sha512-FCs6GC0AMWJl2p6YX7kM+a0AvuSLAZUgbVNtRBskOs4g984t/It0qGtx51O+9vgqnqk6JyoxmIzxKMq+7ch/vg==
   dependencies:
     "@babel/runtime" "^7.12.1"
-
-react-final-form@^6.5.7:
-  version "6.5.7"
-  resolved "https://registry.yarnpkg.com/react-final-form/-/react-final-form-6.5.7.tgz#0c1098accf0f0011adee5a46076ed1b99ed1b1ea"
-  integrity sha512-o7tvJXB+McGiXOILqIC8lnOcX4aLhIBiF/Xi9Qet35b7XOS8R7KL8HLRKTfnZWQJm6MCE15v1U0SFive0NcxyA==
-  dependencies:
-    "@babel/runtime" "^7.15.4"
 
 react-is@^16.12.0, react-is@^16.8.1:
   version "16.13.1"
@@ -1533,7 +1502,7 @@ react-use@^17.3.1:
     ts-easing "^0.2.0"
     tslib "^2.1.0"
 
-react@^17.0.0, react@^17.0.2:
+react@^17.0.0:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
   integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==

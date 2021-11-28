@@ -1,5 +1,3 @@
-import { Panel } from './Panel';
-
 import { IBlock, IBlockData, BasicType, components } from 'easy-email-core';
 import { CustomBlocksType } from '../constants';
 import React from 'react';
@@ -20,12 +18,12 @@ export type ICustomHeader = IBlockData<
 
 export const MyFirstBlock: IBlock = {
   name: 'My first block',
-  type: CustomBlocksType.MY_FIRST_BLOCK as any,
+  type: CustomBlocksType.MY_FIRST_BLOCK,
   create(
     payload
   ) {
     const defaultData: ICustomHeader = {
-      type: CustomBlocksType.MY_FIRST_BLOCK as any,
+      type: CustomBlocksType.MY_FIRST_BLOCK,
       data: {
         value: {
           buttonText: 'Got it',
@@ -58,3 +56,6 @@ export const MyFirstBlock: IBlock = {
     return instance;
   },
 };
+
+
+export { Panel } from './Panel'

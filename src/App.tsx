@@ -17,10 +17,12 @@ import { useImportTemplate } from './hooks/useImportTemplate';
 import { useExportTemplate } from './hooks/useExportTemplate';
 import { copy } from './urils/clipboard';
 import { BasicType, BlockManager, JsonToMjml } from 'easy-email-core';
-import { SimpleFrame } from 'easy-email-extensions';
+import { SimpleLayout } from 'easy-email-extensions';
 
 import 'easy-email-editor/lib/style.css';
 import 'easy-email-extensions/lib/style.css';
+
+import './CustomBlocks';
 
 const fontList = [
   'Arial',
@@ -45,13 +47,14 @@ const pageBlock = BlockManager.getBlockByType(BasicType.PAGE)!;
 
 export default function Editor() {
   const [downloadFileName, setDownloadName] = useState('download.mjml');
-  const [template, setTemplate] = useState<IEmailTemplate['content']>(pageBlock.create({
-    data: {
-      value: {
-        "content-background-color": '#ffffff'
-      }
-    }
-  }));
+  // const [template, setTemplate] = useState<IEmailTemplate['content']>(pageBlock.create({
+  //   data: {
+  //     value: {
+  //       "content-background-color": '#ffffff'
+  //     }
+  //   }
+  // }));
+  const [template, setTemplate] = useState<IEmailTemplate['content']>(templateData);
   const { importTemplate } = useImportTemplate();
   const { exportTemplate } = useExportTemplate();
 
@@ -103,6 +106,7 @@ export default function Editor() {
   return (
     <div>
       <EmailEditorProvider
+        dashed={false}
         data={initialValues}
         height={'calc(100vh - 85px)'}
         // onUploadImage={services.common.uploadByQiniu}
@@ -134,9 +138,9 @@ export default function Editor() {
                 }
               />
 
-              <SimpleFrame>
+              <SimpleLayout>
                 <EmailEditor />
-              </SimpleFrame>
+              </SimpleLayout>
             </>
           );
         }}
