@@ -8,7 +8,9 @@
   "dependencies": {
     "@types/lodash": "^4.14.171",
     "antd": "^4.16.6",
-    "easy-email-editor": "^2.1.1",
+    "easy-email-core": "^2.6.0",
+    "easy-email-editor": "^2.6.0",
+    "easy-email-extensions": "^2.6.0",
     "lodash": "^4.17.21",
     "mjml-browser": "^4.10.1",
     "react": "^17.0.0",
