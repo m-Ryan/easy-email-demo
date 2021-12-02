@@ -8,14 +8,15 @@
   "dependencies": {
     "@types/lodash": "^4.14.171",
     "antd": "^4.16.6",
-    "easy-email-core": "^2.6.0",
-    "easy-email-editor": "^2.6.0",
-    "easy-email-extensions": "^2.6.0",
+    "easy-email-core": "^3.0.3",
+    "easy-email-editor": "^3.0.5",
+    "easy-email-extensions": "^3.0.5",
     "lodash": "^4.17.21",
     "mjml-browser": "^4.10.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "react-final-form": "^6.5.3"
+    "react-final-form": "^6.5.7",
+    "react-sortablejs": "^6.0.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",
