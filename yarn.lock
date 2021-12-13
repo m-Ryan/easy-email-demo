@@ -618,10 +618,10 @@ easy-email-core@^3.0.3:
     lodash "^4.17.21"
     typescript "^4.4.4"
 
-easy-email-editor@^3.0.5:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/easy-email-editor/-/easy-email-editor-3.0.5.tgz#68339932c4b2707b7c66c471d87187be096a787f"
-  integrity sha512-Q4mlXzy+AGMx6gQCHGLS2JtdAqxwPRhiXLFc8IXmn1ItCzd8ghNH6RfmvL+dujSu2WoyZcFDbaTPbngW2kGRTQ==
+easy-email-editor@^3.0.12:
+  version "3.0.12"
+  resolved "https://registry.yarnpkg.com/easy-email-editor/-/easy-email-editor-3.0.12.tgz#85647370a3fb2259066f2357031d1f935d43d77b"
+  integrity sha512-i//eDo7pDoZMTKrSeUjWCt7Tpja9rbRx8nTZ/T13bNjQNpPPBq37YcRWw3H7bGpgMHcQnrQtCpHYUtYApdIKWg==
   dependencies:
     final-form "^4.20.4"
     final-form-arrays "^3.0.2"
@@ -631,10 +631,10 @@ easy-email-editor@^3.0.5:
     react-final-form-arrays "^3.1.3"
     react-use "^17.3.1"
 
-easy-email-extensions@^3.0.5:
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/easy-email-extensions/-/easy-email-extensions-3.0.5.tgz#1012bfd105417dda1696d35ccccf661b31538475"
-  integrity sha512-KN2WZiwlcI3nKHWQIHDsbVCbm1E2fj4XGFyRW7+89GWqSPExswwzQz+OCYAKOgzSs+AcTTNIxbfK+QpzddokXA==
+easy-email-extensions@^3.0.12:
+  version "3.0.12"
+  resolved "https://registry.yarnpkg.com/easy-email-extensions/-/easy-email-extensions-3.0.12.tgz#327eef450d553e14d94c339dc434592ef8a325fd"
+  integrity sha512-u+YwMcIX0dekMSgs7mIgAe2XvfdyeBdyX20p8WQUUubj0/raOpYdkgi1qZmvgHV6Qxp83MwxOJnPQ8oCgfm1UA==
   dependencies:
     "@arco-design/web-react" "^2.25.1"
     codemirror "^5.63.3"
