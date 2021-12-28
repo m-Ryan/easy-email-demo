@@ -3,14 +3,16 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "update": "yarn add easy-email-core@latest easy-email-editor@latest easy-email-extensions@latest"
   },
   "dependencies": {
+    "@arco-themes/react-easy-email-theme-purple": "^0.0.3",
     "@types/lodash": "^4.14.171",
     "antd": "^4.16.6",
-    "easy-email-core": "^3.0.3",
-    "easy-email-editor": "^3.0.12",
-    "easy-email-extensions": "^3.0.12",
+    "easy-email-core": "^3.1.16",
+    "easy-email-editor": "^3.1.20",
+    "easy-email-extensions": "^3.1.20",
     "lodash": "^4.17.21",
     "mjml-browser": "^4.10.1",
     "react": "^17.0.0",

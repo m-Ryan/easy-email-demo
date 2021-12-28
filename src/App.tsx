@@ -21,6 +21,7 @@ import { SimpleLayout } from 'easy-email-extensions';
 
 import 'easy-email-editor/lib/style.css';
 import 'easy-email-extensions/lib/style.css';
+import '@arco-themes/react-easy-email-theme-purple/css/arco.css?inline';
 
 import './CustomBlocks';
 
@@ -110,10 +111,7 @@ export default function Editor() {
         data={initialValues}
         height={'calc(100vh - 85px)'}
         // onUploadImage={services.common.uploadByQiniu}
-        interactiveStyle={{
-          hoverColor: '#E058AF',
-          selectedColor: '#13c2c2',
-        }}
+       
         autoComplete
         fontList={fontList}
         onSubmit={() => { }}
