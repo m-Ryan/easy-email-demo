@@ -323,6 +323,18 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
+"@types/final-form-set-field-touched@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/final-form-set-field-touched/-/final-form-set-field-touched-1.0.0.tgz#f8115c56b7b2c6d343ebad526cd6f01513b6504a"
+  integrity sha512-8J6vYUi5qODR+zhqiRUupBpHyIPXu/YxatSiRDfiTxTGkyZo6Qoh6w4FBIg+wDfoRepRiS8zR4dPIuhr0VL7ZQ==
+  dependencies:
+    final-form "4.x.x"
+
+"@types/is-hotkey@^0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@types/is-hotkey/-/is-hotkey-0.1.7.tgz#30ec6d4234895230b576728ef77e70a52962f3b3"
+  integrity sha512-yB5C7zcOM7idwYZZ1wKQ3pTfjA9BbvFqRWvKB46GFddxnJtHwi/b9y84ykQtxQPg5qhdpg4Q/kWU3EGoCTmLzQ==
+
 "@types/js-cookie@^2.2.6":
   version "2.2.7"
   resolved "https://registry.yarnpkg.com/@types/js-cookie/-/js-cookie-2.2.7.tgz#226a9e31680835a6188e887f3988e60c04d3f6a3"
@@ -337,6 +349,14 @@
   version "15.7.3"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha512-KfRL3PuHmqQLOG+2tGpRO26Ctg+Cq1E01D2DMriKEATHgWLfeNDmq9e29Q9WIky0dQ3NPkd1mzYH8Lm936Z9qw==
+
+"@types/react-color@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@types/react-color/-/react-color-3.0.6.tgz#602fed023802b2424e7cd6ff3594ccd3d5055f9a"
+  integrity sha512-OzPIO5AyRmLA7PlOyISlgabpYUa3En74LP8mTMa0veCA719SvYQov4WLMsHvCgXP+L+KI9yGhYnqZafVGG0P4w==
+  dependencies:
+    "@types/react" "*"
+    "@types/reactcss" "*"
 
 "@types/react-dom@^17.0.0":
   version "17.0.8"
@@ -354,10 +374,22 @@
     "@types/scheduler" "*"
     csstype "^3.0.2"
 
+"@types/reactcss@*":
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/@types/reactcss/-/reactcss-1.2.6.tgz#133c1e7e896f2726370d1d5a26bf06a30a038bcc"
+  integrity sha512-qaIzpCuXNWomGR1Xq8SCFTtF4v8V27Y6f+b9+bzHiv087MylI/nTCqqdChNeWS7tslgROmYB7yeiruWX7WnqNg==
+  dependencies:
+    "@types/react" "*"
+
 "@types/scheduler@*":
   version "0.16.1"
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.1.tgz#18845205e86ff0038517aab7a18a62a6b9f71275"
   integrity sha512-EaCxbanVeyxDRTQBkdLb3Bvl/HK7PBK6UJjsSixB0iHKoWxE5uu2Q/DgtpOhPIojN0Zl1whvOd7PoHs2P0s5eA==
+
+"@types/uuid@^8.3.4":
+  version "8.3.4"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-8.3.4.tgz#bd86a43617df0594787d38b735f55c805becf1bc"
+  integrity sha512-c/I8ZRb51j+pYGAu5CrFMRxqZ2ke4y2grEBO5AUjgSkSk+qT2Ea+OdWElz/OiMf5MNpn2b17kuVBwZLQJXzihw==
 
 "@vitejs/plugin-react-refresh@^1.3.1":
   version "1.3.5"
@@ -615,19 +647,21 @@ dom-helpers@^5.0.1:
     "@babel/runtime" "^7.8.7"
     csstype "^3.0.2"
 
-easy-email-core@^3.1.40:
-  version "3.1.40"
-  resolved "https://registry.yarnpkg.com/easy-email-core/-/easy-email-core-3.1.40.tgz#2b7f4c2c8c201cf8b42e95b8bf8adba6f8f129c0"
-  integrity sha512-oXgnAD0KmcPNVZYo9O2ikxnA8Q5Jib9zJmkM636SXlVAYw38Y523/z5YaI7MFokCynvqeutc6X4B8YDzkF1g2Q==
+easy-email-core@^3.1.49:
+  version "3.1.49"
+  resolved "https://registry.yarnpkg.com/easy-email-core/-/easy-email-core-3.1.49.tgz#ca68a3ef42212b584688780b8d76aa1791d2f55f"
+  integrity sha512-GqTWM9zPIhuaRbf14eob7476992hqBn635SSaoQrhlDnhDDl9F1gU3kmrp+3CkAaUW/lJLnWmxKIqzwrIx6R0A==
   dependencies:
     lodash "^4.17.21"
     typescript "^4.4.4"
 
-easy-email-editor@^3.1.40:
-  version "3.1.40"
-  resolved "https://registry.yarnpkg.com/easy-email-editor/-/easy-email-editor-3.1.40.tgz#7dbc37d048434baa2f485901b71fdb3a18a29623"
-  integrity sha512-VBiflLb3OIujKGbkeZLUPU4usS5Miz/tfrWjSCYAl7uZRJjiT+mrCWrgxtPb2FZB2YfxtgHeizNMAuvesWnG9w==
+easy-email-editor@^3.1.47:
+  version "3.1.47"
+  resolved "https://registry.yarnpkg.com/easy-email-editor/-/easy-email-editor-3.1.47.tgz#bc9add9582c3242d5f218e8ba4cf3ef5c0c9503e"
+  integrity sha512-ECH3R91xcHd2eR05eNsIVuOXsj80au4bkUAJLiQav8EX0Ya2OPGCKcdk3by4XM9mrAauk7sHVoBvNUgDadhs5A==
   dependencies:
+    "@types/final-form-set-field-touched" "^1.0.0"
+    "@types/is-hotkey" "^0.1.7"
     final-form "^4.20.4"
     final-form-arrays "^3.0.2"
     final-form-set-field-touched "^1.0.1"
@@ -636,12 +670,14 @@ easy-email-editor@^3.1.40:
     react-final-form-arrays "^3.1.3"
     react-use "^17.3.1"
 
-easy-email-extensions@^3.1.39:
-  version "3.1.39"
-  resolved "https://registry.yarnpkg.com/easy-email-extensions/-/easy-email-extensions-3.1.39.tgz#d9c30ab2580a5c6a0fba945038e69fb1d9e754a3"
-  integrity sha512-mVYQUKoATrWUb2QgLODmq4i1j0YAuepWPlS8MHmVu0oQhNJYZ+wCFwfWdsLOaPW608sKU63yKWEjJ08wnCVTiQ==
+easy-email-extensions@^3.1.48:
+  version "3.1.48"
+  resolved "https://registry.yarnpkg.com/easy-email-extensions/-/easy-email-extensions-3.1.48.tgz#036c309dbfbc1fecf80a1aa5825a4ad3b957cbd5"
+  integrity sha512-B+yB8nFQyIyJcwm1EOKKdRd7iCvdcgnYq9O8KCTT7AICiremqr3I7husRwvQzjrPkgyPRculVoshazn4i28Fjg==
   dependencies:
     "@arco-design/web-react" "^2.25.1"
+    "@types/react-color" "^3.0.6"
+    "@types/uuid" "^8.3.4"
     codemirror "^5.63.3"
     final-form "^4.20.4"
     final-form-arrays "^3.0.2"
@@ -710,6 +746,13 @@ final-form-set-field-touched@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/final-form-set-field-touched/-/final-form-set-field-touched-1.0.1.tgz#cfbfc0c623df157a1dd0f1a120faa4e2274950f2"
   integrity sha512-yvE5AAs9U3OgJQ9YF8NhSF0I0mJEECvOpkaXNqovloxji5Q6gOZ0DCIAyLAKHluGSpsXKUGORyBm8Hq0beZIqQ==
+
+final-form@4.x.x:
+  version "4.20.6"
+  resolved "https://registry.yarnpkg.com/final-form/-/final-form-4.20.6.tgz#da42f3741db068c0c875e18950a2c4a9a148c63e"
+  integrity sha512-fCdwIj49KOaFfDRlXB57Eo+GghIMZQWrA9TakQI3C9uQxHwaFHXqZSNRlUdfnQmNNeySwGOaGPZCvjy58hyv4w==
+  dependencies:
+    "@babel/runtime" "^7.10.0"
 
 final-form@^4.20.4:
   version "4.20.4"
