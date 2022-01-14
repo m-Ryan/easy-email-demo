@@ -21,7 +21,7 @@ import { SimpleLayout } from 'easy-email-extensions';
 
 import 'easy-email-editor/lib/style.css';
 import 'easy-email-extensions/lib/style.css';
-import '@arco-themes/react-easy-email-theme-purple/css/arco.css?inline';
+import '@arco-themes/react-easy-email-theme-purple/css/arco.css';
 
 import './CustomBlocks';
 

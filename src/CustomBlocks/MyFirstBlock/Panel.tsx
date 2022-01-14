@@ -1,7 +1,18 @@
 import React from 'react';
-import { ColorPickerField, TextField, ImageUploaderField, AttributesPanelWrapper } from 'easy-email-extensions';
+import { ColorPickerField, TextField, ImageUploaderField,  CheckboxField,AttributesPanelWrapper, Padding } from 'easy-email-extensions';
 import { useFocusIdx, Stack, } from 'easy-email-editor'
 import { Collapse } from 'antd';
+
+const checkBoxOption = [
+  {
+    value: 'showBtn',
+    label: 'Show Button',
+  },
+  {
+    value:'showLogo',
+    label:'Show Logo',
+  }
+]
 
 export function Panel() {
   const { focusIdx } = useFocusIdx();
@@ -38,6 +49,8 @@ export function Panel() {
               inline
               alignment='center'
             />
+            <CheckboxField label="Condition" name={`${focusIdx}.data.value.condition`}  options={checkBoxOption}/>
+            <Padding />
           </Stack>
         </Collapse.Panel>
       </Collapse>
