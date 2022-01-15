@@ -17,11 +17,10 @@ import { useImportTemplate } from './hooks/useImportTemplate';
 import { useExportTemplate } from './hooks/useExportTemplate';
 import { copy } from './urils/clipboard';
 import { BasicType, BlockManager, JsonToMjml } from 'easy-email-core';
-import { SimpleLayout } from 'easy-email-extensions';
+import { SimpleLayout } from './SimpleLayout';
 
 import 'easy-email-editor/lib/style.css';
 import 'easy-email-extensions/lib/style.css';
-import '@arco-themes/react-easy-email-theme-purple/css/arco.css?inline';
 
 import './CustomBlocks';
 
@@ -111,7 +110,7 @@ export default function Editor() {
         data={initialValues}
         height={'calc(100vh - 85px)'}
         // onUploadImage={services.common.uploadByQiniu}
-       
+
         autoComplete
         fontList={fontList}
         onSubmit={() => { }}

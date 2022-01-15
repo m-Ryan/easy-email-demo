@@ -12,5 +12,16 @@ export default defineConfig({
       ),
     }
   },
+  css: {
+    modules: {
+      localsConvention: 'dashes',
+    },
+    preprocessorOptions: {
+      scss: {},
+      less: {
+        javascriptEnabled: true,
+      },
+    },
+  },
   plugins: [reactRefresh()]
 })
