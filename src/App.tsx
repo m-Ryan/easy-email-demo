@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-wrap-multilines */
-import React, { useMemo, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import { Button, message, PageHeader } from 'antd';
 import mjml from 'mjml-browser';
 
@@ -18,7 +18,7 @@ import { useExportTemplate } from './hooks/useExportTemplate';
 import { copy } from './urils/clipboard';
 import { BasicType, BlockManager, JsonToMjml } from 'easy-email-core';
 import { SimpleLayout } from 'easy-email-extensions';
-
+import { FormApi } from 'final-form';
 import 'easy-email-editor/lib/style.css';
 import 'easy-email-extensions/lib/style.css';
 import '@arco-themes/react-easy-email-theme-purple/css/arco.css';
@@ -93,6 +93,20 @@ export default function Editor() {
       }))
   };
 
+  const onSubmit = useCallback(
+    async (
+      values: IEmailTemplate,
+      form: FormApi<IEmailTemplate, Partial<IEmailTemplate>>
+    ) => {
+      console.log('values', values)
+
+      // form.restart(newValues); replace new values form backend 
+      message.success('Saved success!')
+    },
+    []
+  );
+
+
   const initialValues: IEmailTemplate | null = useMemo(() => {
     return {
       subject: 'Welcome to Easy-email',
@@ -114,7 +128,7 @@ export default function Editor() {
 
         autoComplete
         fontList={fontList}
-        onSubmit={() => { }}
+        onSubmit={onSubmit}
       >
         {({ values }, { submit }) => {
           return (
@@ -131,6 +145,12 @@ export default function Editor() {
                     </Button>
                     <Button onClick={onImportMjml}>
                       import Template
+                    </Button>
+                    <Button
+                      type='primary'
+                      onClick={() => submit()}
+                    >
+                      Save
                     </Button>
                   </Stack>
                 }
