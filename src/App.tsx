@@ -6,12 +6,13 @@ import mjml from 'mjml-browser';
 import {
   EmailEditor,
   EmailEditorProvider,
+  EmailEditorProviderProps,
   IEmailTemplate,
   Stack,
 } from 'easy-email-editor';
 import 'easy-email-editor/lib/style.css';
 import 'antd/dist/antd.css';
-
+import { Liquid } from 'liquidjs';
 import templateData from './template.json'
 import { useImportTemplate } from './hooks/useImportTemplate';
 import { useExportTemplate } from './hooks/useExportTemplate';
@@ -115,6 +116,13 @@ export default function Editor() {
     };
   }, [template]);
 
+  const onBeforePreview: EmailEditorProviderProps['onBeforePreview'] =
+    useCallback((html: string, mergeTags) => {
+      const engine = new Liquid();
+      const tpl = engine.parse(html);
+      return engine.renderSync(tpl, mergeTags);
+    }, []);
+
 
   if (!initialValues) return null;
 
@@ -125,7 +133,7 @@ export default function Editor() {
         data={initialValues}
         height={'calc(100vh - 85px)'}
         // onUploadImage={services.common.uploadByQiniu}
-
+        onBeforePreview={onBeforePreview}
         autoComplete
         fontList={fontList}
         onSubmit={onSubmit}
