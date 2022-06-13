@@ -3,17 +3,20 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview",
+    "serve": "ts-node server.ts",
     "update": "yarn add easy-email-core@latest easy-email-editor@latest easy-email-extensions@latest"
   },
   "dependencies": {
     "@arco-themes/react-easy-email-theme-purple": "^0.0.3",
+    "@types/jsdom": "^16.2.14",
     "@types/lodash": "^4.14.171",
     "antd": "^4.16.6",
-    "easy-email-core": "^3.1.49",
-    "easy-email-editor": "^3.1.47",
-    "easy-email-extensions": "^3.1.50",
+    "easy-email-core": "^4.1.9",
+    "easy-email-editor": "^4.1.11",
+    "easy-email-extensions": "^4.1.9",
+    "jsdom": "^19.0.0",
     "lodash": "^4.17.21",
+    "mjml": "^4.12.0",
     "mjml-browser": "^4.10.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
@@ -21,6 +24,7 @@
     "react-sortablejs": "^6.0.0"
   },
   "devDependencies": {
+    "@types/mjml": "^4.7.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "@vitejs/plugin-react-refresh": "^1.3.1",
