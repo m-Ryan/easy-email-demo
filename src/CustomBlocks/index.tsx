@@ -4,7 +4,7 @@ import React from 'react';
 import { CustomBlocksType } from './constants';
 import { MyFirstBlock, Panel } from './MyFirstBlock';
 
-BlockManager.registerBlocks({ MyFirstBlock: MyFirstBlock });
+BlockManager.registerBlocks({ [CustomBlocksType.MY_FIRST_BLOCK]: MyFirstBlock });
 
 
 BlockAttributeConfigurationManager.add({

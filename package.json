@@ -11,9 +11,9 @@
     "@types/jsdom": "^16.2.14",
     "@types/lodash": "^4.14.171",
     "antd": "^4.16.6",
-    "easy-email-core": "^4.1.9",
-    "easy-email-editor": "^4.1.11",
-    "easy-email-extensions": "^4.1.9",
+    "easy-email-core": "^4.3.0",
+    "easy-email-editor": "^4.3.0",
+    "easy-email-extensions": "^4.3.0",
     "jsdom": "^19.0.0",
     "lodash": "^4.17.21",
     "mjml": "^4.12.0",
@@ -21,7 +21,8 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-final-form": "^6.5.7",
-    "react-sortablejs": "^6.0.0"
+    "react-sortablejs": "^6.0.0",
+    "react-use": "^17.4.0"
   },
   "devDependencies": {
     "@types/mjml": "^4.7.0",
