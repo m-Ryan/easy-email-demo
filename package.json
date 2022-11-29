@@ -4,16 +4,16 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "ts-node server.ts",
-    "update": "yarn add easy-email-core@latest easy-email-editor@latest easy-email-extensions@latest"
+    "update": "pnpm add easy-email-core@latest easy-email-editor@latest easy-email-extensions@latest"
   },
   "dependencies": {
     "@arco-themes/react-easy-email-theme-purple": "^0.0.3",
     "@types/jsdom": "^16.2.14",
     "@types/lodash": "^4.14.171",
     "antd": "^4.16.6",
-    "easy-email-core": "^4.3.0",
-    "easy-email-editor": "^4.3.0",
-    "easy-email-extensions": "^4.3.0",
+    "easy-email-core": "4.3.4",
+    "easy-email-editor": "^4.3.7",
+    "easy-email-extensions": "^4.3.9",
     "jsdom": "^19.0.0",
     "lodash": "^4.17.21",
     "mjml": "^4.12.0",
