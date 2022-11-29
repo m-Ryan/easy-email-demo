@@ -1,14 +1,17 @@
-import { BlockManager } from 'easy-email-core';
+import { AdvancedType, BlockManager } from 'easy-email-core';
 import { BlockAttributeConfigurationManager, BlockMarketManager, BlockMaskWrapper } from 'easy-email-extensions';
 import React from 'react';
 import { CustomBlocksType } from './constants';
 import { MyFirstBlock, Panel } from './MyFirstBlock';
+import { CustomText, Panel as CustomTextPanel } from "./Text";
 
-BlockManager.registerBlocks({ [CustomBlocksType.MY_FIRST_BLOCK]: MyFirstBlock });
+BlockManager.registerBlocks({
+  [CustomBlocksType.MY_FIRST_BLOCK]: MyFirstBlock, [AdvancedType.TEXT]: CustomText,
+});
 
 
 BlockAttributeConfigurationManager.add({
-  [CustomBlocksType.MY_FIRST_BLOCK]: Panel
+  [CustomBlocksType.MY_FIRST_BLOCK]: Panel, [AdvancedType.TEXT]: CustomTextPanel,
 });
 
 BlockMarketManager.addCategories([
