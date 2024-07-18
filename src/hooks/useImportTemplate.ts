@@ -1,4 +1,4 @@
-import { MjmlToJson } from "easy-email-core";
+import { MjmlToJson } from "easy-email-extensions";
 import { IEmailTemplate } from "easy-email-editor";
 import { Uploader } from "../urils/Uploader";
 
